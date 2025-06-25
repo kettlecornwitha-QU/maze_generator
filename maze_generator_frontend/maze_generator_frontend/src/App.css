@@ -1,0 +1,63 @@
+/* App.css */
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-height: 100vh;
+	width: 100vw;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+button {
+	margin-bottom: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.maze {
+	display: grid;
+	margin: 0 auto;
+}
+
+.controls {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem; /* adds spacing between each label/input pair */
+	margin-bottom: 1rem;
+}
+
+.cell {
+	box-sizing: border-box;
+	border: none;
+}
+
+/* Wall styles */
+.wall-U {
+	border-top: 2px solid black;
+}
+
+.wall-D {
+	border-bottom: 2px solid black;
+}
+
+.wall-L {
+	border-left: 2px solid black;
+}
+
+.wall-R {
+	border-right: 2px solid black;
+}
+
+@media (prefers-color-scheme: dark) {
+	.cell.wall-U,
+	.cell.wall-D,
+	.cell.wall-L,
+	.cell.wall-R {
+		border-color: white;
+	}
+}
