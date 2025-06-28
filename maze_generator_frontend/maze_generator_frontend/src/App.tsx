@@ -24,7 +24,7 @@ export default function App() {
 		const w = parseInt(colsInput);
 
 		try {
-			const res = await axios.get("https://maze-backend-kn5c.onrender.com/generate-maze", {
+			const res = await axios.get("https://maze-backend-lj42.onrender.com", {
 				params: {
 					h,
 					w,
