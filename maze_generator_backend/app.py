@@ -3,7 +3,7 @@ from flask_cors import CORS
 from build import Build
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://maze-frontend-ynwr.onrender.com"])
 
 @app.route('/generate-maze', methods=['GET'])
 def generate_maze():
